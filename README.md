@@ -16,7 +16,7 @@ vagrant ssh
 cd /vagrant
 ```
 
-After you connected in your new installed vm, you are ready to go.
+After you've connected in your new installed virtual machine, you are ready to go.
 
 ## Features
 
@@ -38,7 +38,22 @@ Build targets are used to generate code metrics, run unit tests and many more re
 
 ### Composer
 
-Composer is installed out of the box.
+Composer is installed out of the box. Just call it anywhere.
+
+```
+vagrant@boilerplate:/vagrant$ composer
+   ______
+  / ____/___  ____ ___  ____  ____  ________  _____
+ / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+                    /_/
+Composer version 1.0-dev (f10c71475167a4661225b14560ca0a400d730829) 2015-03-29 14:37:42
+.
+.
+.
+```
 
 ## Thoughts
-If you know some nice little to make development more smooth, please let me know. Pull requests are highly appreciated. Built with love. Hope you'll enjoy.. :-)
+If you know some nice trick to make development more smooth, please let me know. 
+Pull requests are highly appreciated. Built with love. Hope you'll enjoy.. :-)
