@@ -59,42 +59,42 @@ Build targets, powered by [ANT](http://ant.apache.org), are used to easily gener
 vagrant@boilerplate:/vagrant$ ant
 
 help:
-     [echo] 
-     [echo] The following commands are available:
-     [echo] 
-     [echo] |   +++ Build +++
-     [echo] |-- build                (Run the build)
-     [echo] |   |-- dependencies     (Install dependencies)
-     [echo] |   |-- tests            (Lint all files and run tests)
-     [echo] |   |-- metrics          (Generate quality metrics)
-     [echo] |-- cleanup              (Cleanup the build directory)
-     [echo] |
-     [echo] |   +++ Composer +++
-     [echo] |-- composer             -> composer-download, composer-install
-     [echo] |-- composer-download    (Downloads composer.phar to project)
-     [echo] |-- composer-install     (Install all dependencies)
-     [echo] |
-     [echo] |   +++ Testing +++
-     [echo] |-- phpunit              -> phpunit-full
-     [echo] |-- phpunit-tests        (Run unit tests)
-     [echo] |-- phpunit-full         (Run unit tests and generate code coverage report / logs)
-     [echo] |
-     [echo] |   +++ Metrics +++
-     [echo] |-- coverage             (Show code coverage metric)
-     [echo] |-- phploc               (Show lines of code metric)
-     [echo] |-- qa                   (Run quality assurance tools)
-     [echo] |-- |-- phpcpd           (Show copy paste metric)
-     [echo] |-- |-- phpcs            (Show code sniffer metric)
-     [echo] |-- |-- phpmd            (Show mess detector metric)
-     [echo] |
-     [echo] |   +++ Metric Reports +++
-     [echo] |-- phploc-report        (Generate lines of code metric report)
-     [echo] |-- phpcpd-report        (Generate copy paste metric report)
-     [echo] |-- phpcs-report         (Generate code sniffer metric report)
-     [echo] |-- phpmd-report         (Generate mess detector metric report)
-     [echo] |
-     [echo] |   +++ Tools +++
-     [echo] |-- lint                 (Lint all php files)
+    
+  The following commands are available:
+    
+  |   +++ Build +++
+  |-- build                (Run the build)
+  |   |-- dependencies     (Install dependencies)
+  |   |-- tests            (Lint all files and run tests)
+  |   |-- metrics          (Generate quality metrics)
+  |-- cleanup              (Cleanup the build directory)
+  |
+  |   +++ Composer +++
+  |-- composer             -> composer-download, composer-install
+  |-- composer-download    (Downloads composer.phar to project)
+  |-- composer-install     (Install all dependencies)
+  |
+  |   +++ Testing +++
+  |-- phpunit              -> phpunit-full
+  |-- phpunit-tests        (Run unit tests)
+  |-- phpunit-full         (Run unit tests and generate code coverage report / logs)
+  |
+  |   +++ Metrics +++
+  |-- coverage             (Show code coverage metric)
+  |-- phploc               (Show lines of code metric)
+  |-- qa                   (Run quality assurance tools)
+  |-- |-- phpcpd           (Show copy paste metric)
+  |-- |-- phpcs            (Show code sniffer metric)
+  |-- |-- phpmd            (Show mess detector metric)
+  |
+  |   +++ Metric Reports +++
+  |-- phploc-report        (Generate lines of code metric report)
+  |-- phpcpd-report        (Generate copy paste metric report)
+  |-- phpcs-report         (Generate code sniffer metric report)
+  |-- phpmd-report         (Generate mess detector metric report)
+  |
+  |   +++ Tools +++
+  |-- lint                 (Lint all php files)
 ```
 
 ### Composer
