@@ -17,7 +17,7 @@ vagrant ssh
 cd /vagrant
 ```
 
-After you've connected to your new installed virtual machine, you are ready to start coding.
+After you've booted and connected to your new installed virtual machine, you are ready to start coding.
 
 ## Features
 
@@ -31,11 +31,62 @@ After you've connected to your new installed virtual machine, you are ready to s
 
 ### Debugging
 
-Pre-Configured to debug with ease, using [Xdebug](http://xdebug.org).  
+Pre-Configured to debug with ease, using [XDebug](http://xdebug.org).
+
+Call a script using `php-debug script.php` instead of `php script.php` to instruct XDebug to connect to your IDE. 
+
+- [Debug a script with php-debug](http://ant.apache.org)
+- [XDebug connected with PhpStorm](http://ant.apache.org)
+
+You also can use a permanent alias to enable debugger for every script.
+
+- [Enable und disable with permanent alias](http://ant.apache.org)
 
 ### Build Targets
 
 Build targets, powered by [ANT](http://ant.apache.org), are used to easily generate code metrics, run unit tests and execute many more recurring tasks.
+
+```
+vagrant@boilerplate:/vagrant$ ant
+
+help:
+     [echo] 
+     [echo] The following commands are available:
+     [echo] 
+     [echo] |   +++ Build +++
+     [echo] |-- build                (Run the build)
+     [echo] |   |-- dependencies     (Install dependencies)
+     [echo] |   |-- tests            (Lint all files and run tests)
+     [echo] |   |-- metrics          (Generate quality metrics)
+     [echo] |-- cleanup              (Cleanup the build directory)
+     [echo] |
+     [echo] |   +++ Composer +++
+     [echo] |-- composer             -> composer-download, composer-install
+     [echo] |-- composer-download    (Downloads composer.phar to project)
+     [echo] |-- composer-install     (Install all dependencies)
+     [echo] |
+     [echo] |   +++ Testing +++
+     [echo] |-- phpunit              -> phpunit-full
+     [echo] |-- phpunit-tests        (Run unit tests)
+     [echo] |-- phpunit-full         (Run unit tests and generate code coverage report / logs)
+     [echo] |
+     [echo] |   +++ Metrics +++
+     [echo] |-- coverage             (Show code coverage metric)
+     [echo] |-- phploc               (Show lines of code metric)
+     [echo] |-- qa                   (Run quality assurance tools)
+     [echo] |-- |-- phpcpd           (Show copy paste metric)
+     [echo] |-- |-- phpcs            (Show code sniffer metric)
+     [echo] |-- |-- phpmd            (Show mess detector metric)
+     [echo] |
+     [echo] |   +++ Metric Reports +++
+     [echo] |-- phploc-report        (Generate lines of code metric report)
+     [echo] |-- phpcpd-report        (Generate copy paste metric report)
+     [echo] |-- phpcs-report         (Generate code sniffer metric report)
+     [echo] |-- phpmd-report         (Generate mess detector metric report)
+     [echo] |
+     [echo] |   +++ Tools +++
+     [echo] |-- lint                 (Lint all php files)
+```
 
 ### Composer
 
