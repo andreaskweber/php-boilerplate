@@ -1,0 +1,43 @@
+{
+    "name": "andreas-weber/php-boilerplate",
+    "description": "This project can be used as a boilerplate for php projects.",
+    "type": "project",
+    "homepage": "https://github.com/andreas-weber/php-boilerplate",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "boilerplate",
+        "vagrant",
+        "composer",
+        "ant",
+        "puppet",
+        "modules"
+    ],
+    "authors": [
+        {
+            "name": "Andreas Weber",
+            "email": "code@andreas-weber.me",
+            "role": "lead"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/andreas-weber/php-boilerplate/issues"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5",
+        "squizlabs/php_codesniffer": "~2.3",
+        "phpmd/phpmd": "~2.2",
+        "sebastian/phpcpd": "~2.0",
+        "phploc/phploc": "~2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "AndreasWeber\\Boilerplate\\": "src/"
+        }
+    }
+}
