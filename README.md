@@ -51,14 +51,14 @@ You also can use `php-debug-on` and `php-debug-off` to enable and disable debugg
 
 - [Enable und disable debugger for every script](docs/images/debug/permanent-alias.png)
 
+To configure PhpStorm to handle incoming XDebug connections you can read this [article](https://www.jetbrains.com/phpstorm/help/configuring-xdebug.html).
+
 ### Build Targets
 
 Build targets, powered by [ANT](http://ant.apache.org), are used to easily generate code metrics, run unit tests and execute many more recurring tasks.
 
 ```
 vagrant@boilerplate:/vagrant$ ant
-
-help:
     
   The following commands are available:
     
