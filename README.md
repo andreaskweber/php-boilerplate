@@ -27,7 +27,7 @@ After you've booted and connected to your new installed virtual machine, you are
 
 ### Puppet
 
-[Puppet](https://puppetlabs.com/puppet/what-is-puppet) is used to manage your development infrastructure.
+[Puppet](https://puppetlabs.com/puppet/what-is-puppet) is used to manage your development infrastructure. See [Screenshot](docs/images/puppet/manifest.png).
 
 ### Debugging
 
@@ -38,7 +38,7 @@ Call a script using `php-debug script.php` instead of `php script.php` to instru
 - [Debug a script with php-debug](docs/images/debug/debug-command.png)
 - [XDebug connected with PhpStorm](docs/images/debug/debug-view.png)
 
-You also can use a permanent alias to enable debugger for every script.
+You also can use a `php-debug-on` and `php-debug-off` to enable and disable debugger for every script.
 
 - [Enable und disable debugger for every script](docs/images/debug/permanent-alias.png)
 
