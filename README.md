@@ -1,12 +1,13 @@
-# Boilerplate for PHP Projects
+# Boilerplate for PHP projects
 
 This project can be used as a boilerplate for PHP projects.
 
-## Pros
+## Why should I use this?
 
-fast syncing
-one environment per project
-pre configured for rapid prototyping and fast start
+- Dedicated environment per php project
+- Share your environment with other developers
+- Fully pre configured to kick start your new project
+- Use a massive toolchain to make developing a great pleasure
 
 ## Getting started 
 
@@ -16,7 +17,7 @@ vagrant ssh
 cd /vagrant
 ```
 
-After you've connected in your new installed virtual machine, you are ready to go.
+After you've connected to your new installed virtual machine, you are ready to start coding.
 
 ## Features
 
@@ -38,7 +39,7 @@ Build targets are used to generate code metrics, run unit tests and many more re
 
 ### Composer
 
-Composer is installed out of the box. Just call it anywhere.
+Composer is installed by default. Just call it.
 
 ```
 vagrant@boilerplate:/vagrant$ composer
@@ -55,5 +56,5 @@ Composer version 1.0-dev (f10c71475167a4661225b14560ca0a400d730829) 2015-03-29 1
 ```
 
 ## Thoughts
-If you know some nice trick to make development more smooth, please let me know. 
+If you know some nice trick to make development more smooth, please let me know.
 Pull requests are highly appreciated. Built with love. Hope you'll enjoy.. :-)
