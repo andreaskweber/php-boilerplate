@@ -27,7 +27,16 @@ After you've booted and connected to your new installed virtual machine, you are
 
 ### Puppet
 
-[Puppet](https://puppetlabs.com/puppet/what-is-puppet) is used to manage your development infrastructure. See [Puppet manifest](docs/images/puppet/manifest.png).
+[Puppet](https://puppetlabs.com/puppet/what-is-puppet) is used to manage your development infrastructure.
+Checkout [Puppetfile](resources/vagrant/puppet/Puppetfile) to see which Puppet modules will be installed. You also can customize your machine by editing [site.pp](resources/vagrant/puppet/manifests/site.pp).
+
+Configuration:
+
+- Dotdeb-Repository
+- PHP and many PHP modules, development configuration, xdebug
+- wget, htop, curl, ant, git
+- Europe/Berlin as timezone, NTP timeservers
+- Composer
 
 ### Debugging
 
