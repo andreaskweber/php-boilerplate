@@ -35,12 +35,12 @@ Pre-Configured to debug with ease, using [XDebug](http://xdebug.org).
 
 Call a script using `php-debug script.php` instead of `php script.php` to instruct XDebug to connect to your IDE. 
 
-- [Debug a script with php-debug](http://ant.apache.org)
-- [XDebug connected with PhpStorm](http://ant.apache.org)
+- [Debug a script with php-debug](docs/images/debug/debug-command.png)
+- [XDebug connected with PhpStorm](docs/images/debug/debug-view.png)
 
 You also can use a permanent alias to enable debugger for every script.
 
-- [Enable und disable with permanent alias](http://ant.apache.org)
+- [Enable und disable debugger for every script](docs/images/debug/permanent-alias.png)
 
 ### Build Targets
 
