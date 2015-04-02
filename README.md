@@ -38,7 +38,7 @@ Call a script using `php-debug script.php` instead of `php script.php` to instru
 - [Debug a script with php-debug](docs/images/debug/debug-command.png)
 - [XDebug connected with PhpStorm](docs/images/debug/debug-view.png)
 
-You also can use a `php-debug-on` and `php-debug-off` to enable and disable debugger for every script.
+You also can use `php-debug-on` and `php-debug-off` to enable and disable debugger for every script.
 
 - [Enable und disable debugger for every script](docs/images/debug/permanent-alias.png)
 
