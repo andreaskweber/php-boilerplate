@@ -6,7 +6,7 @@ This project can be used as a boilerplate for PHP projects.
 
 - Dedicated environment per php project
 - Share your environment with other developers
-- Fully pre configured to kick start your new project
+- Fully preconfigured to kick start your new project
 - Use a massive toolchain to make developing a great pleasure
 
 ## Getting started 
@@ -27,11 +27,11 @@ After you've booted and connected to your new installed virtual machine, you are
 
 ### Puppet
 
-[Puppet](https://puppetlabs.com/puppet/what-is-puppet) is used to manage your development infrastructure. See [Screenshot](docs/images/puppet/manifest.png).
+[Puppet](https://puppetlabs.com/puppet/what-is-puppet) is used to manage your development infrastructure. See [Puppet manifest](docs/images/puppet/manifest.png).
 
 ### Debugging
 
-Pre-Configured to debug with ease, using [XDebug](http://xdebug.org).
+Preconfigured to debug with ease, using [XDebug](http://xdebug.org).
 
 Call a script using `php-debug script.php` instead of `php script.php` to instruct XDebug to connect to your IDE. 
 
