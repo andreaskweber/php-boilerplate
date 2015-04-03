@@ -1,6 +1,6 @@
 # Boilerplate for PHP projects
 
-This project can be used as a boilerplate for PHP projects.
+This project can be used as a boilerplate for PHP projects. Start each new project with a well tested and established tool chain.
 
 ## Why should I use this?
 
@@ -9,7 +9,9 @@ This project can be used as a boilerplate for PHP projects.
 - Fully preconfigured to kick start your new project
 - Use a massive toolchain to make developing a great pleasure
 
-## Getting started 
+## Getting started
+
+Fetch a copy of this project and launch your virtual machine:
 
 ```
 vagrant up
@@ -17,26 +19,25 @@ vagrant ssh
 cd /vagrant
 ```
 
-After you've booted and connected to your new installed virtual machine, you are ready to start coding.
+After you've booted and connected to your fresh installed and configured virtual machine, you are ready to start coding.
 
 ## Features
 
 ### Vagrant
 
-[Vagrant](https://www.vagrantup.com) is used to easily bring up your virtual development machine.
+[Vagrant](https://www.vagrantup.com) is used to easily bring up your virtual development machine. Use a dedicated environment for each new project.
 
 ### Puppet
 
 [Puppet](https://puppetlabs.com/puppet/what-is-puppet) is used to manage your development infrastructure.
 Checkout [Puppetfile](resources/vagrant/puppet/Puppetfile) to see which Puppet modules will be installed. You also can customize your machine by editing [site.pp](resources/vagrant/puppet/manifests/site.pp).
 
-Configuration:
+#### Host Configuration
 
 - Dotdeb-Repository
-- PHP and many PHP modules, development configuration, xdebug
+- PHP and many PHP modules, development configuration, XDebug
 - wget, htop, curl, ant, git
 - Europe/Berlin as timezone, NTP timeservers
-- Composer
 
 ### Debugging
 
@@ -53,6 +54,32 @@ You also can use `php-debug-on` and `php-debug-off` to enable and disable the de
 
 To configure PhpStorm to handle incoming XDebug connections you can read this [article](https://www.jetbrains.com/phpstorm/help/configuring-xdebug.html).
 
+### PHP-Unit
+
+In `src/Test` there is a preconfigured setup to use PHP-Unit for TDD with the following features:
+
+- Bootstrap file
+- Configured to generate code coverage reports
+- DemoClassTest to show how easy you can write tests
+
+### Composer
+
+[Composer](https://getcomposer.org) is installed by default. Just call `composer`.
+
+```
+vagrant@boilerplate:/vagrant$ composer
+   ______
+  / ____/___  ____ ___  ____  ____  ________  _____
+ / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+                    /_/
+Composer version 1.0-dev (f10c71475167a4661225b14560ca0a400d730829) 2015-03-29 14:37:42
+.
+.
+.
+```
+
 ### Build Targets
 
 Build targets, powered by [ANT](http://ant.apache.org), are used to easily generate code metrics, run unit tests and execute many more recurring tasks.
@@ -61,7 +88,7 @@ Build targets, powered by [ANT](http://ant.apache.org), are used to easily gener
 vagrant@boilerplate:/vagrant$ ant
     
   The following commands are available:
-    
+
   |   +++ Build +++
   |-- build                (Run the build)
   |   |-- dependencies     (Install dependencies)
@@ -95,24 +122,6 @@ vagrant@boilerplate:/vagrant$ ant
   |
   |   +++ Tools +++
   |-- lint                 (Lint all php files)
-```
-
-### Composer
-
-[Composer](https://getcomposer.org) is installed by default. Just call `composer`.
-
-```
-vagrant@boilerplate:/vagrant$ composer
-   ______
-  / ____/___  ____ ___  ____  ____  ________  _____
- / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
-/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
-\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
-                    /_/
-Composer version 1.0-dev (f10c71475167a4661225b14560ca0a400d730829) 2015-03-29 14:37:42
-.
-.
-.
 ```
 
 ### Dotfiles
