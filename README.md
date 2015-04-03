@@ -56,7 +56,7 @@ To configure PhpStorm to handle incoming XDebug connections you can read this [a
 
 ### PHP-Unit
 
-In `src/Test` there is a preconfigured setup to use PHP-Unit for TDD with the following features:
+In `src/Test` there is a preconfigured setup to use [PHP-Unit](https://phpunit.de) for TDD with the following features:
 
 - Bootstrap file
 - Configured to generate code coverage reports
@@ -64,7 +64,15 @@ In `src/Test` there is a preconfigured setup to use PHP-Unit for TDD with the fo
 
 ### Composer
 
-[Composer](https://getcomposer.org) is installed by default. Just call `composer`.
+[Composer](https://getcomposer.org) is installed and configured by default.
+
+#### PHP
+
+Change `composer.json` to customize project definition, namespacing, autoloading and required dependencies. 
+
+#### Environment
+
+Just call `composer` anywhere in your machine to use it:
 
 ```
 vagrant@boilerplate:/vagrant$ composer
