@@ -10,8 +10,7 @@
         "vagrant",
         "composer",
         "ant",
-        "puppet",
-        "modules"
+        "puppet"
     ],
     "authors": [
         {

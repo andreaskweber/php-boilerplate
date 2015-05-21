@@ -205,8 +205,11 @@
     <!-- generate lines of code metric report -->
     <target name="phploc-report" depends="phploc-prepare">
         <exec dir="${basedir}" executable="${basedir}/vendor/bin/phploc">
+            <arg value="--count-tests"/>
             <arg value="--log-xml"/>
             <arg value="${basedir}/build/phploc/phploc.xml"/>
+            <arg value="--log-csv"/>
+            <arg value="${basedir}/build/phploc/phploc.csv"/>
             <arg path="${basedir}/src"/>
         </exec>
     </target>
@@ -262,7 +265,7 @@
             <arg value="--extensions=php"/>
             <arg value="-n"/>
             <arg value="--report=checkstyle"/>
-            <arg value="--report-file=${basedir}/build/phpcs/phpcs-checkstyle.xml"/>
+            <arg value="--report-file=${basedir}/build/phpcs/phpcs.xml"/>
             <arg path="${basedir}/src"/>
         </exec>
     </target>
