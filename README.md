@@ -14,9 +14,9 @@ This project can be used as a boilerplate for PHP projects. Start each new proje
 Fetch a copy of this project and launch your virtual machine:
 
 ```
-vagrant up
-vagrant ssh
-cd /vagrant
+$ vagrant up
+$ vagrant ssh
+$ cd /vagrant
 ```
 
 After you've booted and connected to your fresh installed and configured virtual machine, you are ready to start coding.
@@ -75,7 +75,7 @@ Change `composer.json` to customize project definition, namespacing, autoloading
 Just call `composer` anywhere in your machine to use it:
 
 ```
-vagrant@boilerplate:/vagrant$ composer
+$ composer
    ______
   / ____/___  ____ ___  ____  ____  ________  _____
  / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
@@ -93,7 +93,7 @@ Composer version 1.0-dev (f10c71475167a4661225b14560ca0a400d730829) 2015-03-29 1
 Build targets, powered by [ANT](http://ant.apache.org), are used to easily generate code metrics, run unit tests and execute many more recurring tasks.
 
 ```
-vagrant@boilerplate:/vagrant$ ant
+$ ant
 
  |  The following commands are available:
  |
