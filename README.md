@@ -140,6 +140,7 @@ vagrant@boilerplate:/vagrant$ ant
 - [.gitattributes](http://git-scm.com/book/it/v2/Customizing-Git-Git-Attributes)
 - [.editorconfig](http://editorconfig.org)
 
-## Thoughts
-If you know some nice trick to make development more smooth, please let me know.
-Pull requests are highly appreciated. Built with love. Hope you'll enjoy.. :-)
+## Contribute
+Contributions are always welcome. If you know some nice trick to make development more smooth, please let me know. Fork the project, create a feature branch, and send a pull request.
+
+Thanks to everyone who has [contributed](https://github.com/mykanoa/kanoa/graphs/contributors) to this project.
