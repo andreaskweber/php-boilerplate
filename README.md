@@ -94,42 +94,44 @@ Build targets, powered by [ANT](http://ant.apache.org), are used to easily gener
 
 ```
 vagrant@boilerplate:/vagrant$ ant
-    
-  The following commands are available:
 
-  |   +++ Build +++
-  |-- build                (Run the build)
-  |   |-- dependencies     (Install dependencies)
-  |   |-- tests            (Lint all files and run tests)
-  |   |-- metrics          (Generate quality metrics)
-  |-- cleanup              (Cleanup the build directory)
-  |
-  |   +++ Composer +++
-  |-- composer             -> composer-download, composer-install
-  |-- composer-download    (Downloads composer.phar to project)
-  |-- composer-install     (Install all dependencies)
-  |
-  |   +++ Testing +++
-  |-- phpunit              -> phpunit-full
-  |-- phpunit-tests        (Run unit tests)
-  |-- phpunit-full         (Run unit tests and generate code coverage report / logs)
-  |
-  |   +++ Metrics +++
-  |-- coverage             (Show code coverage metric)
-  |-- phploc               (Show lines of code metric)
-  |-- qa                   (Run quality assurance tools)
-  |-- |-- phpcpd           (Show copy paste metric)
-  |-- |-- phpcs            (Show code sniffer metric)
-  |-- |-- phpmd            (Show mess detector metric)
-  |
-  |   +++ Metric Reports +++
-  |-- phploc-report        (Generate lines of code metric report)
-  |-- phpcpd-report        (Generate copy paste metric report)
-  |-- phpcs-report         (Generate code sniffer metric report)
-  |-- phpmd-report         (Generate mess detector metric report)
-  |
-  |   +++ Tools +++
-  |-- lint                 (Lint all php files)
+ |  The following commands are available:
+ |
+ |   +++ Build +++
+ |-- build                (Run the build)
+ |   |-- dependencies     (Install dependencies)
+ |   |-- tests            (Lint all files and run tests)
+ |   |-- metrics          (Generate quality metrics)
+ |-- cleanup              (Cleanup the build directory)
+ |
+ |   +++ Composer +++
+ |-- composer             -> composer-download, composer-install
+ |-- composer-download    (Downloads composer.phar to project)
+ |-- composer-install     (Install all dependencies)
+ |
+ |   +++ Testing +++
+ |-- phpunit              -> phpunit-full
+ |-- phpunit-tests        (Run unit tests)
+ |-- phpunit-full         (Run unit tests and generate code coverage report / logs)
+ |
+ |   +++ Display Metrics +++
+ |-- coverage             (Show code coverage metric)
+ |-- phploc               (Show lines of code metric)
+ |-- qa                   (Run quality assurance tools)
+ |-- |-- phpcpd           (Show copy paste metric)
+ |-- |-- phpcs            (Show code sniffer metric)
+ |-- |-- phpmd            (Show mess detector metric)
+ |
+ |   +++ Metric Reports +++
+ |-- phploc-report        (Generate lines of code metric report)
+ |-- phpcpd-report        (Generate copy paste metric report)
+ |-- phpcs-report         (Generate code sniffer metric report)
+ |-- phpmd-report         (Generate mess detector metric report)
+ |
+ |   +++ Tools +++
+ |-- lint                 (Lint all php files)
+ |-- phpcbf               (Run PHP Code Beautifier)
+
 ```
 
 ### Dotfiles
