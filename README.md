@@ -11,7 +11,7 @@ This project can be used as a boilerplate for PHP projects. Start each new proje
 
 ## Getting started
 
-Fetch a copy of this project and launch your virtual machine:
+Fetch a copy of this project and customize [Vagrantfile](Vagrantfile) to fit your needs. Afterwards you can launch your virtual machine:
 
 ```
 $ vagrant up
