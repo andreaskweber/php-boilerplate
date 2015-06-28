@@ -131,7 +131,6 @@ $ ant
  |   +++ Tools +++
  |-- lint                 (Lint all php files)
  |-- phpcbf               (Run PHP Code Beautifier)
-
 ```
 
 ### Dotfiles
