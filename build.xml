@@ -31,7 +31,7 @@
         <echo message="|-- phpunit-tests        (Run unit tests)"/>
         <echo message="|-- phpunit-full         (Run unit tests and generate code coverage report / logs)"/>
         <echo message="|"/>
-        <echo message="|   +++ Metrics +++"/>
+        <echo message="|   +++ Display Metrics +++"/>
         <echo message="|-- coverage             (Show code coverage metric)"/>
         <echo message="|-- phploc               (Show lines of code metric)"/>
         <echo message="|-- qa                   (Run quality assurance tools)"/>
@@ -47,6 +47,7 @@
         <echo message="|"/>
         <echo message="|   +++ Tools +++"/>
         <echo message="|-- lint                 (Lint all php files)"/>
+        <echo message="|-- phpcbf               (Run PHP Code Beautifier)"/>
         <echo message=""/>
     </target>
 
@@ -84,7 +85,7 @@
         <antcall target="phpcs-report"/>
         <antcall target="phpmd-report"/>
     </target>
-    
+
     <!-- cleanup -->
     <target name="cleanup">
         <delete dir="${basedir}/build"/>
@@ -251,7 +252,7 @@
     <!-- show code sniffer metric -->
     <target name="phpcs">
         <exec dir="${basedir}" executable="${basedir}/vendor/bin/phpcs">
-            <arg value="--standard=PSR2"/>
+            <arg value="--standard=${basedir}/resources/php/phpcs.xml"/>
             <arg value="--extensions=php"/>
             <arg value="-n"/>
             <arg path="${basedir}/src"/>
@@ -261,7 +262,7 @@
     <!-- generate code sniffer metric report -->
     <target name="phpcs-report" depends="phpcs-prepare">
         <exec dir="${basedir}" executable="${basedir}/vendor/bin/phpcs">
-            <arg value="--standard=PSR2"/>
+            <arg value="--standard=${basedir}/resources/php/phpcs.xml"/>
             <arg value="--extensions=php"/>
             <arg value="-n"/>
             <arg value="--report=checkstyle"/>
@@ -284,7 +285,7 @@
         <exec dir="${basedir}" executable="${basedir}/vendor/bin/phpmd">
             <arg path="${basedir}/src"/>
             <arg value="text"/>
-            <arg value="cleancode,codesize,controversial,design,naming,unusedcode"/>
+            <arg value="${basedir}/resources/php/phpmd.xml"/>
         </exec>
     </target>
 
@@ -293,7 +294,7 @@
         <exec dir="${basedir}" executable="${basedir}/vendor/bin/phpmd">
             <arg path="${basedir}/src"/>
             <arg value="xml"/>
-            <arg value="cleancode,codesize,controversial,design,naming,unusedcode"/>
+            <arg value="${basedir}/resources/php/phpmd.xml"/>
             <arg value="--reportfile"/>
             <arg value="${basedir}/build/phpmd/phpmd.xml"/>
         </exec>
@@ -313,6 +314,20 @@
                 <exclude name="sandbox/**"/>
             </fileset>
         </apply>
+    </target>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- | PHP Code Beautifier                      -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- run php code beautifier -->
+    <target name="phpcbf">
+        <exec dir="${basedir}" executable="${basedir}/vendor/bin/phpcbf">
+            <arg value="--standard=PSR2"/>
+            <arg value="--extensions=php"/>
+            <arg value="-n"/>
+            <arg path="${basedir}/src"/>
+        </exec>
     </target>
 
 </project>
