@@ -1,6 +1,6 @@
 {
     "name": "andreas-weber/php-boilerplate",
-    "description": "This project can be used as a boilerplate for php projects.",
+    "description": "This project can be used as a boilerplate for PHP projects.",
     "type": "project",
     "homepage": "https://github.com/andreas-weber/php-boilerplate",
     "license": "MIT",
@@ -8,9 +8,7 @@
         "php",
         "boilerplate",
         "vagrant",
-        "composer",
-        "ant",
-        "puppet"
+        "composer"
     ],
     "authors": [
         {
